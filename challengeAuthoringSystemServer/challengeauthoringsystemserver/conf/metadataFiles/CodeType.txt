@@ -1,0 +1,14 @@
+# Only one CodeType should be specified per line
+Language,
+Status,
+Level,
+Category,
+Type,
+Title,
+Name,
+Abstract,
+Hint,
+Instruction,
+ChallengeUsage,
+Section,
+Solution

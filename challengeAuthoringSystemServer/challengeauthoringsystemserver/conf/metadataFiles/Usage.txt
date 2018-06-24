@@ -1,0 +1,4 @@
+# Only one usage should be specified per line
+ctf,
+training,
+live-demo

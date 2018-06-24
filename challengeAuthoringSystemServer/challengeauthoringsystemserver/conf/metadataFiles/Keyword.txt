@@ -1,0 +1,5 @@
+# Only one keyword should be specified per line
+sql,
+mysql,
+sqlmap,
+oracle

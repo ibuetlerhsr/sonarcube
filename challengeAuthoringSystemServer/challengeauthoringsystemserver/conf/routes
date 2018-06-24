@@ -1,0 +1,99 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET      /api                                    controllers.Assets.at(path="/public", file="index.html")
+
+OPTIONS  /api/challenges                         controllers.SecurityController.options
+GET      /api/challenges                         controllers.ChallengeController.getChallenges
+
+OPTIONS  /api/solution                           controllers.SecurityController.options
+GET      /api/solution/:challengeId              controllers.ChallengeController.getSpecificSolution(challengeId: String)
+
+GET      /api/challenges/:challengeId            controllers.ChallengeController.getSpecificChallenge(challengeId: String)
+POST     /api/challenges/:challengeId            controllers.ChallengeController.setSpecificChallenge(challengeId: String)
+
+OPTIONS  /api/translatedChallenges               controllers.SecurityController.options
+GET      /api/translatedChallenges/:challengeId  controllers.ChallengeController.getSpecificTranslatedChallenge(challengeId: String)
+
+OPTIONS  /api/filteredChallenges                  controllers.SecurityController.options
+GET      /api/filteredChallenges                  controllers.ChallengeController.getFilteredChallenges(filterQueryString: binders.FilterQueryString)
+
+OPTIONS  /api/challenge/getNewChallengeId        controllers.SecurityController.options
+GET      /api/challenge/getNewChallengeId        controllers.ChallengeController.getNewChallengeId
+
+OPTIONS  /api/section/getNewSectionId            controllers.SecurityController.options
+GET      /api/section/getNewSectionId            controllers.ChallengeController.getNewSectionId(sectionQueryString: binders.SectionQueryString)
+
+OPTIONS  /api/step/getNewInstructionId           controllers.SecurityController.options
+GET      /api/step/getNewInstructionId           controllers.ChallengeController.getNewInstructionId(sectionQueryString: binders.SectionQueryString)
+
+OPTIONS  /api/step/getNewHintId                  controllers.SecurityController.options
+GET      /api/step/getNewHintId                  controllers.ChallengeController.getNewHintId(sectionQueryString: binders.SectionQueryString)
+
+OPTIONS  /api/challenge/getAbstractId            controllers.SecurityController.options
+GET      /api/challenge/getAbstractId            controllers.ChallengeController.getAbstractId(markdownItemQueryString: binders.MarkdownItemQueryString)
+
+OPTIONS  /api/challenge/getSolutionId            controllers.SecurityController.options
+GET      /api/challenge/getSolutionId            controllers.ChallengeController.getSolutionId(markdownItemQueryString: binders.MarkdownItemQueryString)
+
+OPTIONS  /api/challenge/getNewAbstractId         controllers.SecurityController.options
+GET      /api/challenge/getNewAbstractId         controllers.ChallengeController.getNewAbstractId(markdownItemQueryString: binders.MarkdownItemQueryString)
+
+OPTIONS  /api/challenge/getNewSolutionId         controllers.SecurityController.options
+GET      /api/challenge/getNewSolutionId         controllers.ChallengeController.getNewSolutionId(markdownItemQueryString: binders.MarkdownItemQueryString)
+
+OPTIONS  /api/challenge/createNewChallenge       controllers.SecurityController.options
+POST     /api/challenge/createNewChallenge       controllers.ChallengeController.createNewChallenge
+
+OPTIONS  /api/challenge/wsCreateNew              controllers.SecurityController.options
+GET      /api/challenge/wsCreateNew/*queryString controllers.WSChallengeController.ws(queryString)
+
+OPTIONS  /api/consumers                          controllers.SecurityController.options
+GET      /api/consumers                          controllers.ConsumerController.getConsumer
+
+OPTIONS  /api/consumer                           controllers.SecurityController.options
+GET      /api/consumer                           controllers.ConsumerController.getSpecificConsumer
+
+OPTIONS  /api/levels                             controllers.SecurityController.options
+GET      /api/levels                             controllers.ChallengeController.getLevels
+
+OPTIONS  /api/types                              controllers.SecurityController.options
+GET      /api/types                              controllers.ChallengeController.getTypes
+
+OPTIONS  /api/usages                             controllers.SecurityController.options
+GET      /api/usages                             controllers.ChallengeController.getUsages
+
+OPTIONS  /api/categories                         controllers.SecurityController.options
+GET      /api/categories                         controllers.ChallengeController.getCategories
+
+OPTIONS  /api/keywords                           controllers.SecurityController.options
+GET      /api/keywords                           controllers.ChallengeController.getKeywords
+
+OPTIONS  /api/upload_image                       controllers.SecurityController.options
+POST     /api/upload_image                       controllers.MediaController.upload(mediaQueryString: binders.MediaQueryString)
+
+OPTIONS  /api/upload_image_b64                   controllers.SecurityController.options
+POST     /api/upload_image_b64                   controllers.MediaController.uploadBase64(mediaQueryString: binders.MediaQueryString)
+
+OPTIONS  /api/removeImage                        controllers.SecurityController.options
+DELETE   /api/removeImage                        controllers.MediaController.removeImage(mediaQueryString: binders.MediaQueryString)
+
+OPTIONS  /api/step/removeStep                    controllers.SecurityController.options
+DELETE   /api/step/removeStep/:stepId	          controllers.ChallengeController.removeStep(stepId: String)
+
+OPTIONS  /api/media/                             controllers.SecurityController.options
+GET      /api/media/*mediaPath                   controllers.MediaController.getImage(mediaPath: String)
+
+OPTIONS  /api/importChallenge   	          	  controllers.SecurityController.options
+POST     /api/importChallenge	             	  controllers.ImportController.importChallenge
+
+OPTIONS  /api/exportChallenge	          	      controllers.SecurityController.options
+GET      /api/exportChallenge/:challengeId	      controllers.ImportController.exportChallenge(challengeId: String)
+
+OPTIONS  /api/exportAllChallenges	          	  controllers.SecurityController.options
+GET     /api/exportAllChallenges	              controllers.ImportController.exportChallenges
+
+# Map static challengeResources from the /public folder to the /assets URL path
+GET     /api/assets/*file                        controllers.Assets.versioned(path="/public", file: Asset)

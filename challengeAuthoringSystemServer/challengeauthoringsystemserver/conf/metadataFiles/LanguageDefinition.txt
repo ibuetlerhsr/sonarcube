@@ -1,0 +1,10 @@
+# Only one language definition should be specified per line
+en,
+de,
+fr,
+it,
+es,
+zh,
+ru,
+pl,
+nl

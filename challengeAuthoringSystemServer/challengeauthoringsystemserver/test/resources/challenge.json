@@ -1,0 +1,75 @@
+{
+  "id": "24634bab-e068-463e-820c-c5f650198f08",
+  "name":  "SQL Injection",
+  "level":  5,
+  "type": "attack-defense",
+  "usages": [
+    "live-demo",
+    "ctf",
+    "training"
+  ],
+  "keywords": [
+    "sql",
+    "mysql",
+    "sqlmap",
+    "oracle"
+  ],
+  "categories": [
+    "websecurity",
+    "dbsecurity"
+  ],
+  "created": "1. July 2018",
+  "author": "Max Mustermann",
+  "last update": "1. Aug. 2018",
+  "last git commit": "iidasfiiafiweir",
+  "resources": [
+    {
+      "id": "62f2fab1-8cb6-416c-8b1b-b7c4c3521d28",
+      "type": "file"
+    },
+    {
+      "id": "9e4be467-9a54-49e4-8a4f-4542386bc5ba",
+      "type": "docker"
+    }
+  ],
+  "goldnugget-type": "static",
+  "goldnugget-secret-static": "hampidampi",
+  "public": true,
+
+  "sections": [
+    {
+      "id": "2d4fcfb3-1ee7-4a16-866a-051fd985cf07",
+      "order": 1,
+      "steps": [
+        {
+          "id": "4c1767f3-2e2a-4bd0-891b-fa92c1cad6b4",
+          "order": 1,
+          "type": "hint"
+        },
+        {
+          "id": "23011284-f716-4c21-b246-6422e3c4029f",
+          "order": 2,
+          "type": "instruction"
+        }
+
+      ]
+    },
+    {
+      "id": "5b3e7789-441a-4d0f-8285-c21616164042",
+      "order": 2,
+      "steps": [
+        {
+          "id": "85agk67f3-2e2a-4bd0-891b-fiupqli1cad6b4",
+          "order": 1,
+          "type": "instruction"
+        },
+        {
+          "id": "8976284-f716-4c21-b246-9854ac4029f",
+          "order": 2,
+          "type": "hint"
+        }
+
+      ]
+    }
+  ]
+}

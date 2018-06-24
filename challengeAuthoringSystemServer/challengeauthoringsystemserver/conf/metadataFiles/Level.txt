@@ -1,0 +1,6 @@
+# Only one level should be specified per line
+novice,
+easy,
+medium,
+hard,
+leet

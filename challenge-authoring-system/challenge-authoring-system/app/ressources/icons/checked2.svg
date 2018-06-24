@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5484"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="checked2.svg">
+  <defs
+     id="defs5478" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0405163"
+     inkscape:cx="396.85039"
+     inkscape:cy="577.97212"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5481">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5522">
+      <path
+         id="path5418"
+         d="m 105.01798,103.92337 c -55.554579,0 -100.5952101,36.46582 -100.5952101,81.44735 0,44.98153 45.0406311,81.44735 100.5952101,81.44735 55.56069,0 100.5952,-36.46582 100.5952,-81.44735 0,-44.98153 -45.03639,-81.44735 -100.5952,-81.44735 z M 86.5647,227.20863 42.270519,191.34718 57.033987,179.39387 86.5647,203.30202 l 66.43727,-53.79275 14.76346,11.9533 z"
+         style="fill:#6ac259;stroke-width:0.42429611"
+         inkscape:connector-curvature="0" />
+      <text
+         id="text5459"
+         y="83.187073"
+         x="6.9649749"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.11111069px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332"
+           y="83.187073"
+           x="6.9649749"
+           id="tspan5457"
+           sodipodi:role="line">SUCCESSFULLY CREATED </tspan><tspan
+           id="tspan5516"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.11111069px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332"
+           y="100.82596"
+           x="6.9649749"
+           sodipodi:role="line">         CHALLENGE!</tspan></text>
+    </g>
+  </g>
+</svg>

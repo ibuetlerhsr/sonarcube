@@ -1,0 +1,5 @@
+# Only one type should be specified per line
+attack-defense,
+jeopardy,
+secure programming,
+hardening
